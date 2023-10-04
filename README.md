@@ -1,1 +1,1 @@
-# M-USE_ResourceGeneration
+# M-USE_SupportFileGeneration
