@@ -11,7 +11,7 @@ This algorithm is applied to every combination of start to end where the possibl
 
 ## Scripting
 
-The script that generates the mazes is labelled _find_all_maze_paths_logical_v6_. While the DFS algorithm is running, the mazes are appended to a local file labelled **_saved_mazes_i.mat_** while the maze details are stored in **_save_mazes_info_i.mat_** in batches of 10,000 to clear the memory of the newly generated paths in MATLAB. Once the file exceeds 400,000 maze entries, the file name is incremented and the mazes are saved and appended to a new file. 
+The script that generates the mazes is labelled _find_all_maze_paths_logical_v6_. While the DFS algorithm is running, the mazes are appended to a local file labelled **_saved_mazes_i.mat_** while the maze details are stored in **_saved_mazes_info_i.mat_** in batches of 10,000 to clear the memory of the newly generated paths in MATLAB. Once the file exceeds 400,000 maze entries, the file name is incremented and the mazes are saved and appended to a new file. 
 
 Once all possible mazes are generated, the function _merge_and_classify_maze_library_ is called and combines all the generated **_saved_mazes_i.mat_** and **_saved_mazes_info_i.mat_** files into 2 files named **_all_mazes.mat_** and **_all_mazes_info.mat_**. These tables are filtered and stored locally by path length and number of turns. 
 
