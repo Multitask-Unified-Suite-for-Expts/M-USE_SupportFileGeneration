@@ -1,7 +1,0 @@
-to generate mazescall find_all_maze_paths_logical_v5 with the following types of inputs:
-
-find_all_maze_paths_logical_v5(6, 1000, 25, 10, "G:\\LatestMazeGeneration\\Mazes_Matlab", "G:\\LatestMazeGeneration\\MazeDef.txt")
-
-
-MazeGenerationSummary:
-The MATLAB script "find_all_maze_paths_logical_v5.mlx" utilizes the dimensions of the maze to initialize a table of all possible start and end coordinates along the borders of the maze.  The script then iteratively explores all potential maze paths from every start to end coordinate pair, recording the path and visited coordinates while respecting constraints of max length and turns. If a path reaches the end coordinate, it's written to output files, otherwise exploration continues until all paths are found or limits are reached.
